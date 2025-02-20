@@ -1,0 +1,20 @@
+/* Personalização dos indicadores do carrossel */
+.carousel-indicators [data-bs-target] {
+  width: 30px; /* Largura dos indicadores */
+  height: 3px; /* Altura dos indicadores */
+  margin-right: 3px; /* Espaçamento entre os indicadores */
+  margin-left: 3px;
+  background-color: #000; /* Cor dos indicadores inativos */
+  border: 0; /* Remove a borda padrão */
+  opacity: 0.5; /* Opacidade dos indicadores inativos */
+  transition: opacity 0.3s ease; /* Transição suave */
+}
+
+.carousel-indicators .active {
+  opacity: 1; /* Opacidade do indicador ativo */
+}
+
+/* Aumenta a área de clique dos indicadores */
+.carousel-indicators {
+  padding: 10px 0; /* Aumenta a área de clique verticalmente */
+}

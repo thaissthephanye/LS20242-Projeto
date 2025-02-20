@@ -2,7 +2,8 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <link rel="stylesheet" href="src/style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -10,7 +11,8 @@
       crossorigin="anonymous"
     />
 
-    <title>Document</title>
+
+    <title>EmpreitAEH</title>
   </head>
   <body>
     <header>
@@ -40,72 +42,93 @@
               <a class="nav-link" href="#">Clientes</a>
             </div>
           </div>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
       </nav>
 
     </header>
+  
 
-    <main>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Construção">
-              </div>
-              <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1626885930974-4b69aa21bbf9?q=80&w=1346&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Duas pessoas com capacete vendo uma obra">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
+        <main>
+
+              
+              <div class="container mt-3">
+                <!-- Carrossel -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+            
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="src/images/carrossel-1.jpg" class="d-block w-100" alt="Construção">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/images/carrossel-2.jpg" class="d-block w-100" alt="Duas pessoas com capacete vendo uma obra">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/images/carrossel3.jpg" class="d-block w-100" alt="Casa em processo de construção">
+                        </div>
+                    </div>
+            
+                    <!-- Controles de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <div class="container text-center mt-3">
-            <div class="row">
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://images.unsplash.com/photo-1665241277288-cc866bea837c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Arquitetura inovadora">
-                    <div class="card-body">
-                      <h5 class="card-title">Projeto Arquitetonico Inovador</h5>
-                      <p class="card-text">Um projeto arquitetonico inovdor feito pela EmpreitAEH.</p>
-                      <a href="#" class="btn btn-primary">Detalhe</a>
-                    </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://images.unsplash.com/photo-1665241277288-cc866bea837c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Arquitetura inovadora">
-                    <div class="card-body">
-                      <h5 class="card-title">Projeto Arquitetonico Inovador</h5>
-                      <p class="card-text">Um projeto arquitetonico inovdor feito pela EmpreitAEH.</p>
-                      <a href="#" class="btn btn-primary">Detalhe</a>
-                    </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://images.unsplash.com/photo-1665241277288-cc866bea837c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Arquitetura inovadora">
-                    <div class="card-body">
-                      <h5 class="card-title">Projeto Arquitetonico Inovador</h5>
-                      <p class="card-text">Um projeto arquitetonico inovdor feito pela EmpreitAEH.</p>
-                      <a href="#" class="btn btn-primary">Detalhe</a>
-                    </div>
-              </div>
-            </div>
-          </div>
 
 
-          </div>
-    </main>
+                  <div class="container text-center mt-3">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1665241277288-cc866bea837c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Arquitetura inovadora">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arquitetura Vernacular</h5>
+                                    <p class="card-text">Respeitando as tradições locais. Nossos projetos incorporam técnicas e materiais regionais, criando uma conexão profunda com o lugar.</p>
+                                    <a href="#" class="btn btn-primary">Detalhe</a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="src/images/megapredio.jpg" class="card-img-top" alt="Arquitetura inovadora">
+                                <div class="card-body">
+                                    <h5 class="card-title">Design Moderno</h5>
+                                    <p class="card-text">Linhas limpas, espaços amplos e funcionalidade. Nossos projetos modernos priorizam a simplicidade e a elegância, criando ambientes que inspiram.</p>
+                                    <a href="#" class="btn btn-primary">Detalhe</a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="src/images/futurista.jpg" class="card-img-top" alt="Arquitetura inovadora">
+                                <div class="card-body">
+                                    <h5 class="card-title">Projeto Arquitetonico Futurista</h5>
+                                    <p class="card-text">Imaginando o amanhã. Projetamos edifícios que desafiam os limites da tecnologia e do design, criando espaços inovadores e visionários.</p>
+                                    <a href="#" class="btn btn-primary">Detalhe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                  </div>
+            </main>
+    
 
     <footer></footer>
 
