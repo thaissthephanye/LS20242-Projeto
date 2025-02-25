@@ -78,22 +78,27 @@
                     <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Formulário de Cliente</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Formulário de Obra</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
 
                           <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Tipo de construção</option>
+                              <option value="1">Casa</option>
+                              <option value="2">Edí</option>
+                            </select>
+                            <label for="formGroupExampleInput" class="form-label">Tipo da construção</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Casa ou Edfício">
                           </div>
                           <div class="mb-3">
-                            <label for="formGroupExampleInput2" class="form-label">E-mail</label>
+                            <label for="formGroupExampleInput2" class="form-label">Cliente</label>
                             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="exemplo@email.com">
                           </div>
                           <div class="mb-3">
                             <label for="formGroupExampleInput2" class="form-label">CPF</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="111.222.333-44">
+                            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="111.222.333-44">
                           </div>
 
                         </div>
@@ -102,32 +107,42 @@
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                         <button type="button" class="btn btn-primary">Salvar</button>
                         </div>
-                    </div>
+                      </div>
                     </div>
                 </div>
+
 
                 <!--Tabela-->
                 <table class="table">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">E-mail</th>
-                        <th scope="col">CPF</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">Tipo de construção</th>
+                        <th scope="col">Logradouro</th>
+                        <th scope="col">Bairro</th>
+                        <th scope="col">Cidade</th>
+                        <th scope="col">Estado</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
                         <td>Maria</td>
-                        <td>maria@email.com</td>
-                        <td>467.444.556-30</td>
+                        <td>Casa</td>
+                        <td>Rua das Flores, 445</td>
+                        <td>Centro</td>
+                        <td>Solânea</td>
+                        <td>Paraíba</td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>José</td>
-                        <td>js@email.com</td>
-                        <td>754.890.473-30</td>
+                        <td>João</td>
+                        <td>Edfício</td>
+                        <td>Rua da Tristeza, 475</td>
+                        <td>Bodogongo</td>
+                        <td>Campina Grande</td>
+                        <td>Paraíba</td>
                       </tr>
                     </tbody>
                   </table>
@@ -136,6 +151,8 @@
         
 
         <footer>
+          <div id="footer">
+
           <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <p class="col-md-4 mb-0 text-muted">© 2021 Company, Inc</p>
         
@@ -150,8 +167,13 @@
               <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
               <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
             </ul>
+
+          </div>
+          
           </footer>
+
         </footer>
+
 
         <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

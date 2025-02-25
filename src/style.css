@@ -18,3 +18,19 @@
 .carousel-indicators {
   padding: 10px 0; /* Aumenta a área de clique verticalmente */
 }
+
+main {
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  padding-bottom: 2.5rem; /* altura do rodapé */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; /* altura do rodapé */
+}
