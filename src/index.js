@@ -1,3 +1,4 @@
+/*
 let dataset = [
   {
     nome: "José",
@@ -13,3 +14,4 @@ let dataset = [
 
 let clientesTable = document.getElementById("clientesTable");
 clientesTable.insertAdjacentElement("beforeend");
+ */
