@@ -9,6 +9,7 @@ btnSalvar.addEventListener("click", function () {
   const email = document.getElementById("email").value;
   const cpf = document.getElementById("cpf").value;
 
+  //add na tabela
   if (nome && email && cpf) {
     const novaLinha = tabela.insertRow();
 
