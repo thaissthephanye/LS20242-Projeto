@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .getElementById("tabelaObras")
     .getElementsByTagName("tbody")[0];
 
+  //pegando os elementos
   btnSalvar.addEventListener("click", function () {
     const nome = document.getElementById("nome").value;
     const tipoConstrucao = document.getElementById("tipoConstrucao").value;
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cidade = document.getElementById("cidade").value;
     const estado = document.getElementById("estado").value;
 
+    //add na tabela
     if (nome && tipoConstrucao && logradouro && bairro && cidade && estado) {
       const novaLinha = tabela.insertRow();
 
