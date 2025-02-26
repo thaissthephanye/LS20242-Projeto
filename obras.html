@@ -69,8 +69,6 @@
                     </div>
                   </div>
                 </div>
-
-        <!-- Button trigger modal -->
  
                 
                 <!-- Modal -->
@@ -83,108 +81,89 @@
                         </div>
                         <div class="modal-body">
 
-                          <!--Nome e tipo de construção-->
-                          <div class="row">
-                            <div class="col-8">
-                              <div class="mb-3">
-                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu nome">
+                          <form id="formObras">
+
+                            <!--Nome e tipo de construção-->
+                            <div class="row">
+                              <div class="col-8">
+                                <div class="mb-3">
+                                  <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                                </div>
+                              </div>
+
+                              <div class="col-4">
+                                <div class="mb-3">
+                                  <select class="form-select" aria-label="Default select example" id="tipoConstrucao" required>
+                                    <option selected disabled>Tipo de construção</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Edifício">Edifício</option>
+                                  </select>
+                                </div>
                               </div>
                             </div>
 
-                            <div class="col-4">
-                              <div class="mb-3">
-                                <select class="form-select" aria-label="Default select example">
-                                  <option selected>Tipo de construção</option>
-                                  <option value="1">Casa</option>
-                                  <option value="2">Edíficio</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
+                            <!--Logradouro e bairro-->
+                            <div class="row">
+                              <div class="col-8">
+                                <div class="mb-3">
+                                  <label for="logradouro" class="form-label">Logradouro</label>
+                                  <input type="text" class="form-control" id="logradouro" placeholder="Rua e número" required>
+                                </div>
 
-                          <!--Logradouro e bairro-->
-                          <div class="row">
-                            <div class="col-8">
-                              <div class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">Logradouro</label>
-                                <input type="text" class="form-control" id="logradouro" placeholder="Rua e número">
                               </div>
-
-                            </div>
-                            <div class="col-4">
-                              <div class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">Bairro</label>
-                                <input type="text" class="form-control" id="bairro">
-                              </div>
-                            </div>
-                          </div>
-
-                          <!--cidade e estado-->
-                          <div class="row">
-                            <div class="col-8">
-                              <div class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">Cidade</label>
-                                <input type="text" class="form-control" id="cidade">
+                              <div class="col-4">
+                                <div class="mb-3">
+                                  <label for="bairro" class="form-label">Bairro</label>
+                                  <input type="text" class="form-control" id="bairro" required>
+                                </div>
                               </div>
                             </div>
 
-                            <div class="col-4">
-                              <div class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">Estado</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput3">
+                            <!--cidade e estado-->
+                            <div class="row">
+                              <div class="col-8">
+                                <div class="mb-3">
+                                  <label for="cidade" class="form-label">Cidade</label>
+                                  <input type="text" class="form-control" id="cidade" required>
+                                </div>
+                              </div>
+
+                              <div class="col-4">
+                                <div class="mb-3">
+                                  <label for="estado" class="form-label">Estado</label>
+                                  <input type="text" class="form-control" id="estado" required>
+                                </div>
                               </div>
                             </div>
-                          </div>
 
-
-
-
+                          </form>
 
                         </div>
 
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                          <button type="button" class="btn btn-primary">Salvar</button>
+                          <button type="button" class="btn btn-primary" id="btnSalvar">Salvar</button>
                         </div>
                       </div>
                     </div>
                 </div>
 
 
-                <!--Tabela-->
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Cliente</th>
-                        <th scope="col">Tipo de construção</th>
-                        <th scope="col">Logradouro</th>
-                        <th scope="col">Bairro</th>
-                        <th scope="col">Cidade</th>
-                        <th scope="col">Estado</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Maria</td>
-                        <td>Casa</td>
-                        <td>Rua das Flores, 445</td>
-                        <td>Centro</td>
-                        <td>Solânea</td>
-                        <td>Paraíba</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>João</td>
-                        <td>Edfício</td>
-                        <td>Rua da Tristeza, 475</td>
-                        <td>Bodogongo</td>
-                        <td>Campina Grande</td>
-                        <td>Paraíba</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <!--Tabela-->
+                  <table class="table" id="tabelaObras">
+                      <thead>
+                        <tr>
+                          <th scope="col">Nome</th>
+                          <th scope="col">Tipo de construção</th>
+                          <th scope="col">Logradouro</th>
+                          <th scope="col">Bairro</th>
+                          <th scope="col">Cidade</th>
+                          <th scope="col">Estado</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
             </div>
         </main>
         
@@ -220,6 +199,6 @@
           crossorigin="anonymous"
         ></script>
         
-        <script src="index.js"></script>
+        <script src="src/obras.js"></script>
       </body>
 </html>

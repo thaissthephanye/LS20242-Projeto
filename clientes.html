@@ -81,53 +81,44 @@
                         </div>
 
                         <div class="modal-body">
+                          <form id="formUsuario">
 
-                          <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
-                          </div>
-                          <div class="mb-3">
-                            <label for="formGroupExampleInput2" class="form-label">E-mail</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="exemplo@email.com">
-                          </div>
-                          <div class="mb-3">
-                            <label for="formGroupExampleInput2" class="form-label">CPF</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="111.222.333-44">
-                          </div>
+                            <div class="mb-3">
+                              <label for="nome" class="form-label">Nome</label>
+                              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="email" class="form-label">E-mail</label>
+                              <input type="text" class="form-control" id="email" placeholder="exemplo@email.com" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="cpf" class="form-label">CPF</label>
+                              <input type="text" class="form-control" id="cpf" placeholder="111.222.333-44" required>
+                            </div>
+                          </form>
+ 
 
                         </div>
 
                         <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary">Salvar</button>
+                        <button type="button" class="btn btn-primary" id="btnSalvar">Salvar</button>
                         </div>
                     </div>
                     </div>
                 </div>
 
                 <!--Tabela-->
-                <table class="table">
+                <table class="table" id="tabelaUsuarios">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
                         <th scope="col">Nome</th>
                         <th scope="col">E-mail</th>
                         <th scope="col">CPF</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Maria</td>
-                        <td>maria@email.com</td>
-                        <td>467.444.556-30</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>José</td>
-                        <td>js@email.com</td>
-                        <td>754.890.473-30</td>
-                      </tr>
+                    <tbody id="tbodyClientes">
+
                     </tbody>
                   </table>
             </div>
@@ -164,6 +155,6 @@
           crossorigin="anonymous"
         ></script>
         
-        <script src="index.js"></script>
+        <script src="src/clientes.js"></script>
       </body>
 </html>
